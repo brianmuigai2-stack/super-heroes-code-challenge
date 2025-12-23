@@ -79,8 +79,9 @@ The API will be available at `http://localhost:5555`
 ## Support
 
 For questions or issues, contact Brian Muigai.
+-----------------------
 Email: brian11613bmw@gmail.com
-
+------------------------
 ## License
 
 This project is licensed under the MIT License.

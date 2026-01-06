@@ -1,18 +1,15 @@
 from app import app, db
 from models import Hero, Power, HeroPower
 
-# ----------------------
+
 # Seed Function
-# ----------------------
 def seed_data():
     with app.app_context():
         # Drop all tables and recreate them
         db.drop_all()
         db.create_all()
 
-        # ----------------------
         # Create Heroes
-        # ----------------------
         heroes = [
             Hero(name="Kamala Khan", super_name="Ms. Marvel"),
             Hero(name="Doreen Green", super_name="Squirrel Girl"),
@@ -27,9 +24,7 @@ def seed_data():
         ]
         db.session.add_all(heroes)
 
-        # ----------------------
         # Create Powers
-        # ----------------------
         powers = [
             Power(name="super strength", description="gives the wielder super-human strengths"),
             Power(name="flight", description="gives the wielder the ability to fly through the skies at supersonic speed"),
@@ -39,9 +34,7 @@ def seed_data():
         db.session.add_all(powers)
         db.session.commit()
 
-        # ----------------------
         # Create HeroPowers
-        # ----------------------
         hero_powers = [
             HeroPower(hero_id=1, power_id=2, strength="Strong"),
             HeroPower(hero_id=2, power_id=4, strength="Average"),
@@ -54,8 +47,6 @@ def seed_data():
 
         print("Database seeded successfully!")
 
-# ----------------------
 # Run Seed
-# ----------------------
 if __name__ == "__main__":
     seed_data()

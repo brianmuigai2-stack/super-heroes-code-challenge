@@ -2,9 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-# ----------------------------
 # Hero Model
-# ----------------------------
 class Hero(db.Model):
     __tablename__ = "heroes"
 
@@ -23,9 +21,7 @@ class Hero(db.Model):
             "hero_powers": [hp.to_dict() for hp in self.hero_powers]
         }
 
-# ----------------------------
 # Power Model
-# ----------------------------
 class Power(db.Model):
     __tablename__ = "powers"
 
@@ -48,9 +44,7 @@ class Power(db.Model):
             "description": self.description
         }
 
-# ----------------------------
 # HeroPower Model
-# ----------------------------
 class HeroPower(db.Model):
     __tablename__ = "hero_powers"
 

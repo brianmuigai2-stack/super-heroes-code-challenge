@@ -34,7 +34,7 @@ This application provides a comprehensive API for superhero management, allowing
 
 2. Install dependencies:
    ```bash
-   pipenv install
+   pip install -r requirements.txt
    ```
 
 3. Activate virtual environment:

@@ -28,7 +28,7 @@ This application provides a comprehensive API for superhero management, allowing
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:brianmuigai2-stack/super-heroes-code-challenge.git
    cd super-heroes
    ```
 
@@ -44,8 +44,7 @@ This application provides a comprehensive API for superhero management, allowing
 
 4. Initialize database:
    ```bash
-   cd server
-   python seed.py
+      python seed.py
    ```
 
 5. Run the application:
